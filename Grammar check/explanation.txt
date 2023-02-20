@@ -1,0 +1,22 @@
+An explanation of how the code works and run:
+
+This script is checking the words in a text file, "AliceInWonderland200.txt" against a dictionary list of words in a separate text file, 
+"dictionary.txt", and printing out any words that are not found in the dictionary. 
+
+It does so by first importing the regular expression module and defining a function split_line that uses regular expressions to extract words from a line. 
+Then it initializes empty lists for the dictionary and 'Alice in Wonderland' words, opens the dictionary file, 
+reads each line, strips any leading/trailing whitespace, 
+adds the words from the line to the dictionary list, 
+removes duplicates, and sorts the list alphabetically. 
+
+After that, the script opens the text file, "AliceInWonderland200.txt" and reads it line by line, 
+stripping any leading/trailing whitespace, splits the line into a list of words, and iterates over each word in the line. 
+The script then checks if the word is not in the dictionary list and if it is not, 
+it prints the line number and the word that was not found in the dictionary and breaks out of the loop. 
+
+The script starts by performing a linear search, where it reads the "AliceInWonderland200.txt" file line by line, 
+splits each line into a list of words and iterates over each word. Then it checks if the word is in the dictionary list using the in keyword.
+After that, it repeats the same process using a binary search algorithm to check if the word is in the dictionary list 
+and prints the same message if the word is not found.
+
+** Both searches, binary and linear, do the same thing, except binary is more efficient and potentially faster. **
